@@ -37,7 +37,7 @@ img {
 
 .header {
   grid-area: header;
-  background: linear-gradient(90deg, #858941 0%, #9B9E5A 100%);
+  background: linear-gradient(90deg, #9B9E5A , #B0B27E );
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -59,20 +59,20 @@ display: block;
 padding: 10px;
 color: #F4F5EB;
 font-size: 1.125rem;
-background:  rgba(35, 36, 16, .1);
+background:  rgba(0, 0, 0, .1);
 border-radius: 8px;
-transition: .4s;
+transition: .4s ease-out ;
 }
 
 .header nav a:hover {
-  background: rgba(35, 36, 16, .4);
+  background: rgba(0, 0, 0, .4);
 }
 
 /* Sidenav */
 
 .sidenav {
   grid-area: sidenav;
-  background: #F4F5EB;
+  background: #fff;
   padding: 30px;
 }
 
@@ -80,8 +80,18 @@ transition: .4s;
   display: block;
   min-width: 60px;
   max-width: 100px;
-  width: 100px;
+  margin: 0 auto 30px auto;
+  background: #F4F5EB;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 0px rgba(0 , 0, 0, 0.1);
+  transition: .4s;
 }
+
+.sidenav li a:hover {
+  background: #B0B27E;
+}
+
 
 .content {
   grid-area: content;
