@@ -68,13 +68,19 @@ transition: .4s;
   background: rgba(35, 36, 16, .4);
 }
 
-
-
-
-
+/* Sidenav */
 
 .sidenav {
   grid-area: sidenav;
+  background: #F4F5EB;
+  padding: 30px;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  width: 100px;
 }
 
 .content {
